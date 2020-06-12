@@ -71,12 +71,9 @@
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
                             <li><a href="#line1">UTCInitialize</a></li>
-                            <!-- <li><a href="#line2">How to Install WordPress</a></li>
-                            <li><a href="#line3">How to Install Theme</a></li>
-                            <li><a href="#line4">Necessary Plugins</a></li>
-                            <li><a href="#line5">Creating Blog Pages</a></li>
-                            <li><a href="#line6">Revolution Slider</a></li>
-                            <li><a href="#line7">How to Use Option Panel</a>
+                            <li><a href="#line2">UTCDeinitialize</a></li>
+                            <li><a href="#line3">UTCAttachProbe</a></li>
+                            <!-- <li><a href="#line7">How to Use Option Panel</a>
                                 <ul class="nav">
                                     <li><a href="#line7_1">General Options</a></li>
                                     <li><a href="#line7_2">Style Options</a></li>
@@ -86,11 +83,7 @@
                                     <li><a href="#line7_6">Page Options</a></li>
                                     <li><a href="#line7_7">Import & Export</a></li>
                                 </ul>
-                            </li>
-                            <li><a href="#line8">Support Desk</a></li>
-                            <li><a href="#line9">Files & Sources</a></li>
-                            <li><a href="#line10">Version History (Changelog)</a></li>
-                            <li><a href="#line11">Copyright and license</a></li> -->
+                            </li> -->
                         </ul>
                     </nav >
                 </div>
@@ -145,7 +138,6 @@
                     </section>
 
                     <section id="line1" class="section">
-
                         <div class="row">
                             <div class="col-md-12 left-align">
                                 <h2 class="dark-text">UTCInitialize <a href="#top">#back to top</a><hr></h2>
@@ -158,13 +150,10 @@
                                     This function is used to initialize the UltraSee's Ultrasound Imaging System. It should always be called before any other functions are called.
                                 </p>
                                 <h4>function structure</h4>
-
                                 <pre class="brush: html">
                                     utc_result UTCAPI UTCInitialize (CONST UTC_INIT* pInitData);
                                 </pre>
-                                <p>
-                                    This function UTCInitialize takes in a UTC_INIT pointer and give a result status utc_result as output.
-                                </p>
+                                <p>This function UTCInitialize takes in a UTC_INIT pointer and give a result status utc_result as output.</p>
                                 <p>UTC_INIT is structured as follows:</p>
                                 <pre class="brush: html">
                                     typedef struct tagUTC_INIT
@@ -174,89 +163,60 @@
                                         UTC_EVENT_CALLBACK eventCallback;
                                     } UTC_INIT;
                                 </pre>
-
                                 <p>Where hWnd is the Window handle to receive probe message, nUserMsg is the message code to be used when probe message is posted to hWnd, and eventCallback is the probe event callback function. The callback function is used in none-windows platforms, and if it is not used, then it should be set to NULL.</p>
                                 <p>The result status will be UTC_SUCCESS if successfully initialized.                                </p>
                             </div>
-                            <!-- end col -->
                         </div>
-                        <!-- end row -->
-
                     </section>
                     <!-- end section -->
 
-                    <!-- <section id="line2" class="section">
-
+                    <section id="line2" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install WordPress <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">UTCDeinitialize <a href="#top">#back to top</a><hr></h2>
                             </div>
                         </div>
-
-                        <div class="intro2 clearfix">
-                            <p><i class="fa fa-wordpress"></i> Lorem the It is a long established fact that a reader will be distracted..
-                                <br> Please read more about WordPress here. <a href="#">WordPress Installation via FTP.</a> </p>
-                        </div>
-
-                        <hr>
-
-                        <h4>Upload via WordPress Admin</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                        <hr>
                         <div class="row">
-                            <div class="col-md-8 col-md-offset-2">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/snFzbPm_RUE" frameborder="0" allowfullscreen></iframe>
-                                </div>
+                            <div class="col-md-12">
+                                <p>This function is used to de-initialize the system when application exits. It must be the last function called before exiting system.</p>
+                                <h4>function structure</h4>
+                                <pre class="brush: html">
+                                    void UTCAPI UTCDeinitialize (void);
+                                </pre>
                             </div>
-
                         </div>
-
-                    </section> -->
+                    </section>
                     <!-- end section -->
-
-                    <!-- <section id="line3" class="section">
-
+                    
+                    <section id="line3" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install Theme <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">UTCAttachProbe<a href="#top">#back to top</a><hr></h2>
                             </div>
                         </div>
 
-                        <h4>Upload via WordPress Admin</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-
-                        <hr>
-
-                        <h4>Upload via FTP Server</h4>
-
-                        <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                        <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
-                        <hr>
                         <div class="row">
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yQnQyI5WlKs" frameborder="0" allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                            <div class="col-md-6">
-                                <div class="media">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z0kEVwJB_go" frameborder="0" allowfullscreen></iframe>
-                                </div>
-
+                            <div class="col-md-12">
+                                <p>When probe is attached, the application will receive a USB attached event from OS. </p>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCAttachProbe (UTC_PROBE_HANDLER* pProbeHandler, const TCHAR* pSettingName = NULL, bool bUseVirtualProbe = false);
+                                </pre>
+                                <p>This function is used to attach to a probe in SDK with following configurations: </p>
+                                <p><b>pProbeHandler</b> is a callback handler to receive images.</p>
+                                <p><b>pSettingName</b>is the name of settings the user wants to attach to the probe. If it is NULL, then the default settings will be used.</p>
+                                <p><b>bUseVirtualProbe</b>defines if a real probe is attached or a virtual probe is used for simulation.</p>
+                                <p>The <b>pProbeHandler</b> is structured as follows:</p>
+                                <pre class="brush: html">
+                                    typedef struct tagUTC_PROBE_HANDLER
+                                    {
+                                        UTC_FRAME_CALLBACK FrameCallback;
+                                        void* 	pUserData;
+                                    } UTC_PROBE_HANDLER;
+                                </pre>
+                                <p>The FrameCallback is a pointer that points to the callback handler function, and the handle function will take pUserData as input.</p>
                             </div>
                         </div>
-
-                    </section> -->
-                    <!-- end section -->
+                    </section>
 
                     <!-- <section id="line4" class="section">
 
