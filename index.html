@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -66,28 +66,100 @@
             <!-- end section -->
 
             <div class="row">
-
-                <div class="col-md-3">
+                
+                <div class="col-md-4">
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
-                            <li><a href="#line1">UTCInitialize</a></li>
-                            <li><a href="#line2">UTCDeinitialize</a></li>
-                            <li><a href="#line3">UTCAttachProbe</a></li>
-                            <!-- <li><a href="#line7">How to Use Option Panel</a>
+                            <li><a href="#line1">System Initialization Functions</a>
                                 <ul class="nav">
-                                    <li><a href="#line7_1">General Options</a></li>
-                                    <li><a href="#line7_2">Style Options</a></li>
-                                    <li><a href="#line7_3">Header Options</a></li>
-                                    <li><a href="#line7_4">Font Options</a></li>
-                                    <li><a href="#line7_5">Slider Options</a></li>
-                                    <li><a href="#line7_6">Page Options</a></li>
-                                    <li><a href="#line7_7">Import & Export</a></li>
+                                    <li><a href="#line1_1">UTCInitialize</a></li>
+                                    <li><a href="#line1_2">UTCDeinitialize</a></li>
                                 </ul>
-                            </li> -->
+                            </li>
+                            <li>
+                                <a href="#line2">Probe Attach/Detach Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line2_1">UTCAttachProbe</a></li>
+                                    <li><a href="#line2_2">UTCDetachProbe</a></li>
+                                    <li><a href="#line2_3">UTCIsProbeAttached</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line3">Probe Scan Start/Stop Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line3_1">UTCProbeStart</a></li>
+                                    <li><a href="#line3_2">UTCProbeStop</a></li>
+                                    <li><a href="#line3_3">UTCProbeIsStarted</a></li>
+                                    <li><a href="#line3_4">UTCGetProbeStatus</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line4">Probe Scan Control Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line4_1">UTCSetGain</a></li>
+                                    <li><a href="#line4_2">UTCGetGain</a></li>
+                                    <li><a href="#line4_3">UTCAdjustTGC</a></li>
+                                    <li><a href="#line4_4">UTCGetTGC</a></li>
+                                    <li><a href="#line4_5">UTCSetDepth</a></li>
+                                    <li><a href="#line4_6">UTCGetDepth</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line5">Image Replay Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line5_1">UTCReplayStart</a></li>
+                                    <li><a href="#line5_2">UTCReplayStop</a></li>
+                                    <li><a href="#line5_3">UTCReplayPause</a></li>
+                                    <li><a href="#line5_4">UTCReplaySetPosition</a></li>
+                                    <li><a href="#line5_5">UTCReplayGetTotalFrames</a></li>
+                                    <li><a href="#line5_6">UTCReplayGetImages</a></li>
+                                    <li><a href="#line5_7">UTCSaveLastImage</a></li>
+                                    <li><a href="#line5_8">UTCSaveLastVideoClip</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line6">Recording and Replay Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line6_1">UTCEnableRFRecording</a></li>
+                                    <li><a href="#line6_2">UTCEnableIQRecording</a></li>
+                                    <li><a href="#line6_3">UTCEnableImageRecording</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line7">Probe Settings Management Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line7_1">UTCSetWorkingFolder</a></li>
+                                    <li><a href="#line7_2">UTCGetWorkingFolder</a></li>
+                                    <li><a href="#line7_3">UTCSaveProbeSetting</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line8">Profile Management Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line8_1">UTCListProfiles</a></li>
+                                    <li><a href="#line8_2">UTCSelectProfile</a></li>
+                                    <li><a href="#line8_3">UTCSaveProfile</a></li>
+                                    <li><a href="#line8_4">UTCRenameProfile</a></li>
+                                    <li><a href="#line8_5">UTCSaveProfileChanges</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line9">Processing System Management Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line9_1">UTCGetProbeProperty</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#line10">Error Functions</a>
+                                <ul class="nav">
+                                    <li><a href="#line10_1">UTCGetLastError</a></li>
+                                    <li><a href="#line10_2">UTCMapResultCode</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav >
                 </div>
-                <div class="col-md-9">
+                <div class="col-md-8">
                     <section class="welcome">
 
                         <div class="row">
@@ -96,43 +168,9 @@
                                 <div class="row">
 
                                     <div class="col-md-12 full">
-                                        <!-- <div class="intro1">
-                                            <ul>
-                                                <li><strong>Item Name : </strong>Gather Responsive Event Template</li>
-                                                <li><strong>Item Version : </strong> v 1.0</li>
-                                                <li><strong>Author  : </strong> <a href="http://themeforest.net/user/surjithctly" target="_blank">Surjith S M</a></li>
-                                                <li><strong>Support Forum : </strong> <a href="https://support.surjithctly.in/forums" target="_blank">https://support.surjithctly.in/forums</a></li>
-                                                <li><strong>License : </strong> <a href="#" target="_blank">Un License</a></li>
-                                            </ul>
-                                        </div> -->
-
-                                        <hr>
-                                        <div>
-                                            <!-- <p>First of all, Thank you so much for purchasing this template and for being my loyal customer.
-                                                <strong>You are awesome!</strong>
-                                                <br> You are entitled to get free lifetime updates to this product + exceptional support from the author directly.
-                                            </p>
-
-                                            <p>This documentation is to help you regarding each step of customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. Basic HTML and CSS knowledge is required to customize this template. You may learn basics <a href="http://www.w3schools.com/" target="_blank">here</a>, <a href="https://developer.mozilla.org/" target="_blank">here</a> and <a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" target="_blank">here</a>. </p>
-
-                                            <h4>Requirements</h4>
-                                            <p>You will need the following sofwares to customize this template.</p>
-                                            <ol>
-                                                <li>Code Editing Software (eg: Dreamweaver, Sublime Text or Notepad)</li>
-                                                <li>Web Browser for testing (eg: Google Chrome or Mozilla Firefox)</li>
-                                                <li>FTP Tool to upload files to Server (eg: <a href="https://filezilla-project.org/download.php?type=client" target="_blank">FileZilla</a>) </li>
-                                            </ol>
-                                            <div class="intro2 clearfix">
-                                                <p><i class="fa fa-exclamation-triangle"></i> Be careful while editing the template. If not edited properly, the design layout may break completely.
-                                                    <br> No support is provided for faulty customization.
-                                                </p>
-                                            </div> -->
-
-                                        </div>
                                     </div>
 
                                 </div>
-                                <!-- end row -->
                             </div>
                         </div>
                     </section>
@@ -140,31 +178,41 @@
                     <section id="line1" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">UTCInitialize <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">System Initialization Functions<a href="#top">#back to top</a></h2>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-md-12">
-                                <p>
-                                    This function is used to initialize the UltraSee's Ultrasound Imaging System. It should always be called before any other functions are called.
-                                </p>
-                                <h4>function structure</h4>
+                                <h4 id="line1_1">UTCInitialize  <a href="#top">#back to top</a></h4>
                                 <pre class="brush: html">
-                                    utc_result UTCAPI UTCInitialize (CONST UTC_INIT* pInitData);
+                                    utc_result UTCAPI UTCInitialize (const UTC_INIT* pInitData);
                                 </pre>
-                                <p>This function UTCInitialize takes in a UTC_INIT pointer and give a result status utc_result as output.</p>
-                                <p>UTC_INIT is structured as follows:</p>
+                                <p>This function is used to initialize the UltraSee’s Ultrasound Imaging System. It should always be called before any other functions are called.</p>
+                                <p>@input: a UTC_INIT pointer <b>pInitData</b></p>
+                                <p>@return: <b>utc_result</b> indicating if the system has successfully initialized.</p>
+                                <br />
+                                <p>The <b>pInitData</b> is structured as follows:</p>
                                 <pre class="brush: html">
                                     typedef struct tagUTC_INIT
                                     {
-                                        HWND hWnd;
-                                        UINT nUserMsg;
-                                        UTC_EVENT_CALLBACK eventCallback;
+	                                    HWND hWnd;
+	                                    UINT nUserMsg;
+	                                    UTC_EVENT_CALLBACK eventCallback; 
                                     } UTC_INIT;
                                 </pre>
-                                <p>Where hWnd is the Window handle to receive probe message, nUserMsg is the message code to be used when probe message is posted to hWnd, and eventCallback is the probe event callback function. The callback function is used in none-windows platforms, and if it is not used, then it should be set to NULL.</p>
-                                <p>The result status will be UTC_SUCCESS if successfully initialized.                                </p>
+                                <p>Where <b>hWnd</b> is the Window handle to receive probe message, <b>nUserMsg</b> is the message code to be used when probe message is posted to hWnd, and <b>eventCallback</b> is the probe event callback function. The callback function is used in none-windows platforms, and if it is not used, then it should be set to NULL.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line1_2">UTCDeinitialize  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    void UTCAPI UTCDeinitialize();
+                                </pre>
+                                <p>This function is used to de-initialize the system when application exits. It must be the last function called before exiting system.</p>
+                                <p>@input: none</p>
+                                <p>@return: none</p>
                             </div>
                         </div>
                     </section>
@@ -173,88 +221,532 @@
                     <section id="line2" class="section">
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">UTCDeinitialize <a href="#top">#back to top</a><hr></h2>
+                                <h2 class="dark-text">Probe Attach/Detach Functions<a href="#top">#back to top</a></h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-12">
-                                <p>This function is used to de-initialize the system when application exits. It must be the last function called before exiting system.</p>
-                                <h4>function structure</h4>
+                                <h4 id="line2_1">UTCAttachProbe  <a href="#top">#back to top</a></h4>
                                 <pre class="brush: html">
-                                    void UTCAPI UTCDeinitialize (void);
+                                    UTCAPI utc_result UTCAttachProbe(UTC_PROBE_HANDLER* pProbeHandler, const TCHAR* pSettingName = NULL, bool bUseVirtualProbe = false);
                                 </pre>
-                            </div>
-                        </div>
-                    </section>
-                    <!-- end section -->
-                    
-                    <section id="line3" class="section">
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">UTCAttachProbe<a href="#top">#back to top</a><hr></h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-12">
-                                <p>When probe is attached, the application will receive a USB attached event from OS. </p>
-                                <pre class="brush: html">
-                                    UTCAPI utc_result UTCAttachProbe (UTC_PROBE_HANDLER* pProbeHandler, const TCHAR* pSettingName = NULL, bool bUseVirtualProbe = false);
-                                </pre>
-                                <p>This function is used to attach to a probe in SDK with following configurations: </p>
+                                <p>When a probe is attached to the computer, the application will receive a USB attached event from OS. This function is used to attach to a probe in SDK using input configurations.</p>
+                                <p>@input: a UTC_PROBE_HANDLER pointer <b>pProbeHandler</b>, a constant string <b>pSettingName</b> (by default set to NULL), a Boolean value <b>bUseVirtualProbe</b> (by default set to false)</p>
                                 <p><b>pProbeHandler</b> is a callback handler to receive images.</p>
-                                <p><b>pSettingName</b>is the name of settings the user wants to attach to the probe. If it is NULL, then the default settings will be used.</p>
-                                <p><b>bUseVirtualProbe</b>defines if a real probe is attached or a virtual probe is used for simulation.</p>
+                                <p><b>pSettingName</b> is the name of probe settings the user wants to attach to the probe. If it is NULL, then the default settings will be used.</p>
+                                <p><b>bUseVirtualProbe</b> defines if a real probe is attached (false) or a virtual probe is used for simulation (true).</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully attached to a probe in SDK.</p>
                                 <p>The <b>pProbeHandler</b> is structured as follows:</p>
                                 <pre class="brush: html">
                                     typedef struct tagUTC_PROBE_HANDLER
                                     {
-                                        UTC_FRAME_CALLBACK FrameCallback;
-                                        void* 	pUserData;
+	                                    UTC_FRAME_CALLBACK FrameCallback;
+	                                    void*	pUserData;
                                     } UTC_PROBE_HANDLER;
                                 </pre>
-                                <p>The FrameCallback is a pointer that points to the callback handler function, and the handle function will take pUserData as input.</p>
+                                <p>The <b>FrameCallback</b> is a pointer that points to the callback handler function, and the handle function will take <b>pUserData</b> as input.</p>
                             </div>
-                        </div>
-                    </section>
-
-                    <!-- <section id="line4" class="section">
-
-                        <div class="row">
-                            <div class="col-md-12 left-align">
-                                <h2 class="dark-text">Necessary Plugins <a href="#top">#back to top</a><hr></h2>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 id="line2_2">UTCDetachProbe  <a href="#top">#back to top</a></h4>
+                                    <pre class="brush: html">
+                                        UTCAPI void UTCDetachProbe();
+                                    </pre>
+                                    <p>This function is used to detach from a probe in SDK.</p>
+                                    <p>@input: none</p>
+                                    <p>@return: none</p>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin1.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #1</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin2.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #2</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-
-                            <div class="col-md-4">
-                                <img src="images/upload/plugin3.png" alt="" class="img-responsive img-thumbnail">
-                                <h4>Plugin name #3</h4>
-                                <p>Lorem the It is a long established fact that a reader will be distracted.. Please read more about WordPress here.</p>
-                            </div>
-
-                            <div class="col-md-12">
-                                <p>Lorem the It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-primary">Get a Installation Service</a> <a href="#" class="btn btn-info">Ask a Question</a>
+                            <br />
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 id="line2_3">UTCIsProbeAttached  <a href="#top">#back to top</a></h4>
+                                    <pre class="brush: html">
+                                        UTCAPI bool UTCIsProbeAttached();
+                                    </pre>
+                                    <p>This function is used to check if there is a probe attached in SDK.</p>
+                                    <p>@input: none</p>
+                                    <p>@return: a Boolean value indicating is attached (true) or is not attached (false).</p>
                                 </div>
                             </div>
                         </div>
+                    </section>
+                    <!-- end section -->
 
-                    </section> -->
+                    <section id="line3" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Probe Scan Start/Stop Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line3_1">UTCProbeStart  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCProbeStart();
+                                </pre>
+                                <p>This function is used to start probe scanning.</p>
+                                <p>@input: none</p>
+                                <p>@return: <b>utc_result</b> indicating if the probe scanning has successfully started.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line3_2">UTCProbeStop  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCProbeStop();
+                                </pre>
+                                <p>This function is used to stop probe scanning.</p>
+                                <p>@input: none</p>
+                                <p>@return: <b>utc_result</b> indicating if the probe scanning has successfully stopped.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line3_3">UTCProbeIsStarted  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI bool UTCProbeIsStarted();
+                                </pre>
+                                <p>This function is used to check if the probe has started scanning or not.</p>
+                                <p>@input: none</p>
+                                <p>@return: a Boolean value indicating is started (true) or is not started (false).</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line3_4">UTCGetProbeStatus  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    utc_result UTCAPI UTCGetProbeStatus(int* nStatus);
+                                </pre>
+                                <p>This function is used to get probe status. </p>
+                                <p>@input: an integer pointer <b>nStatus</b></p>
+                                <p>The function will set the value pointed by <b>nStatus</b> to the probe status. </p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully got probe status.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line4" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Probe Scan Control Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_1">UTCSetGain  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSetGain(int nGain);
+                                </pre>
+                                <p>This function is used to set the probe gain. </p>
+                                <p>@input: an integer value <b>nGain</b></p>
+                                <p><b>nGain</b> is the desired gain the user wants to set to. It should be in range 0 – 100.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully set the probe gain.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_2">UTCGetGain  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCGetGain(int& nGain);
+                                </pre>
+                                <p>This function is used to get the current probe gain. </p>
+                                <p>@input: an integer reference <b>nGain</b></p>
+                                <p>The function will set the value pointed by <b>nGain</b> to the current probe gain. </p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully fetched the probe gain. </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_3">UTCAdjustTGC  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCAdjustTGC(int nTGCIndex, int nTGCValue);
+                                </pre>
+                                <p>This function is used to adjust probe TGC. </p>
+                                <p>@input: two integer values, <b>nTGCIndex</b> and <b>nTGCValue></b></p>
+                                <p><b>nTGCIndex</b> is the index of TGC position. It should be in range 0 – N (depends on how many TGC segments supported). </p>
+                                <p><b>nTGCValue</b> is the TGC value and should be in range 0 – 100 (100% gain). </p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully adjusted probe TGC. </p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_4">UTCGetTGC  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCGetTGC(int* pTGCValues, int& nSize);
+                                </pre>
+                                <p>This function is used to get all TGC settings. </p>
+                                <p>@input: an integer pointer <b>pTGCValues</b> and an integer reference <b>nSize</b></p>
+                                <p><b>pTGCValues</b> is a buffer to receive TGC values.</p>
+                                <p><b>nSize</b> is the maximum size of TGC values buffer. It will return actual TGC value size fetched, for example, if it is a 4 segments TGC, then 4 values are returned. If it is a 2 segments TGC, then 2 values are returned.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully fetched the probe TGC values.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_5">UTCSetDepth  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSetDepth(int nDepthInMM);
+                                </pre>
+                                <p>This function is used to set probe scan depth. </p>
+                                <p>@input: an integer value <b>nDepthInMM</b></p>
+                                <p><b>nDepthInMM</b> is the desired depth (in millimeters) to be set. Supported depths depends on probe type. Typical depths are: 20, 40, 60, 80 etc.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully set the probe depth.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line4_6">UTCGetDepth  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI int UTCGetDepth();
+                                </pre>
+                                <p>This function is used to get current probe scan depth. </p>
+                                <p>@input: none</p>
+                                <p>@return: an integer value of current probe scan depth.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line5" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Image Replay Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_1">UTCReplayStart  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCReplayStart();                                
+                                </pre>
+                                <p>This function is used to replay the last scan images.</p>
+                                <p>@input: none</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully replayed the last scan image.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_2">UTCReplayStop  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI void UTCReplayStop();                                
+                                </pre>
+                                <p>This function is used to stop the replay.</p>
+                                <p>@input: none</p>
+                                <p>@return: none</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_3">UTCReplayPause  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI void UTCReplayPause();                           
+                                </pre>
+                                <p>This function is used to pause the replay.</p>
+                                <p>@input: none</p>
+                                <p>@return: none</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_4">UTCReplaySetPosition  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI void UTCReplaySetPosition(int nPosition);                      
+                                </pre>
+                                <p>This function is used to set the replay position.</p>
+                                <p>@input: an integer value <b>nPosition</b>, the replay position.</p>
+                                <p>@return: none</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_5">UTCReplayGetTotalFrames  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI int UTCReplayGetTotalFrames();                  
+                                </pre>
+                                <p>This function is used to get total recorded frames.</p>
+                                <p>@input: none</p>
+                                <p>@return: an integer value, which is the number of total recorded frames.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_6">UTCReplayGetImages  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCReplayGetImages(const uint8_t** pBuffer, int& nBufferCount, int& nWidth, int& nHeight);            
+                                </pre>
+                                <p>This function is used to get images from recorded replay buffer.</p>
+                                <p>@input: </p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully got images from recorded replay buffer.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_7">UTCSaveLastImage  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSaveLastImage(const TCHAR* pszImageFilePath);          
+                                </pre>
+                                <p>This function is used to save the last recorded image to file.</p>
+                                <p>@input: a constant string <b>pszImageFilePath</b></p>
+                                <p><b>pszImageFilePath</b> is the file path that the last recorded image should be saved to.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully saved the last recorded image to the given file path.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line5_8">UTCSaveLastVideoClip  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSaveLastVideoClip(const TCHAR* pszVideoFilePath);       
+                                </pre>
+                                <p>This function is used to save the last recorded video clip to file.</p>
+                                <p>@input: a constant string <b>pszVideoFilePath</b></p>
+                                <p><b>pszVideoFilePath</b> is the file path that the last recorded video clip should be saved to.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully saved the last recorded video clip to the given file path.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line6" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Recording and Replay Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line6_1">UTCEnableRFRecording  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCEnableRFRecording(bool bEnable);                                
+                                </pre>
+                                <p>This function is used to enable/disable RF data recording.</p>
+                                <p>If the recording is turned on, RF data are recorded in every freeze. Last N seconds frame data are recorded into a new file in folder "record" or configured location.</p>
+                                <p>@input: a Boolean value <b>bEnable</b></p>
+                                <p>if <b>bEnable</b> is true, then RF data recording will be enabled. else if <b>bEnable</b> is false, then RF data recording will be disabled.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully enabled/disabled RF data recording.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line6_2">UTCEnableIQRecording  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCEnableIQRecording(bool bEnable);                                
+                                </pre>
+                                <p>This function is used to enable/disable IQ data recording.</p>
+                                <p>If the recording is turned on, IQ data are recorded in every freeze. Last N seconds frame data are recorded into a new file in folder "record" or configured location.</p>
+                                <p>@input: a Boolean value <b>bEnable</b></p>
+                                <p>if <b>bEnable</b> is true, then IQ data recording will be enabled. else if <b>bEnable</b> is false, then IQ data recording will be disabled.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully enabled/disabled IQ data recording.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line6_3">UTCEnableImageRecording  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCEnableImageRecording(bool bEnable);                                
+                                </pre>
+                                <p>This function is used to enable/disable Image data recording.</p>
+                                <p>If the recording is turned on, Image data are recorded in every freeze. Last N seconds frame data are recorded into a new file in folder "record" or configured location.</p>
+                                <p>@input: a Boolean value <b>bEnable</b></p>
+                                <p>if <b>bEnable</b> is true, then Image data recording will be enabled. else if <b>bEnable</b> is false, then Image data recording will be disabled.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully enabled/disabled Image data recording.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line7" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Probe Setting Management Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_1">UTCSetWorkingFolder  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI void UTCSetWorkingFolder(const TCHAR* pFolder);                         
+                                </pre>
+                                <p>This function is used to set working folder. If not set, then default working folder is where EXE file is located.</p>
+                                <p>@input: a constant string <b>pFolder</b>, the file path of working folder.</p>
+                                <p>@return: none</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_2">UTCGetWorkingFolder  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI const TCHAR* UTCGetWorkingFolder();                    
+                                </pre>
+                                <p>This function is used to get system working folder.</p>
+                                <p>@input: none</p>
+                                <p>@return: a constant string, the file path of working folder.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line7_3">UTCSaveProbeSetting  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSaveProbeSetting(const TCHAR* pSettingName);                  
+                                </pre>
+                                <p>This function is used to save probe settings.</p>
+                                <p>@input: a constant string <b>pSettingName</b>, the name of probe settings the user wants to save.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully saved the probe settings. </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line8" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Profile Management Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_1">UTCListProfiles  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCListProfiles(UTC_PROFILE_INFO* Profiles, int& nCount);                  
+                                </pre>
+                                <p>This function is used to list available profiles.</p>
+                                <p>@input: a UTC_PROFILE_INFO pointer <b>Profiles</b> and an integer reference <b>nCount</b></p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully listed available profiles.</p>
+                                <br />
+                                <p>The <b>Profiles</b> is structured as follows:</p>
+                                <pre class="brush: html">
+                                    typedef struct tagUTC_PROFILE_INFO
+                                    {
+	                                    TCHAR szName[UTC_MAX_NAME_SIZE+1];
+	                                    TCHAR szImageName[UTC_MAX_NAME_SIZE+1];
+                                    } UTC_PROFILE_INFO;
+                                </pre>
+                                <p>The UTC_MAX_NAME_SIZE is 30.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_2">UTCSelectProfile  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSelectProfile(const TCHAT* pszProfileName);         
+                                </pre>
+                                <p>This function is used to select a profile setting by profile name.</p>
+                                <p>@input: a constant string <b>pszProfileName</b>, the name of the profile to be selected.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully selected the profile.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_3">UTCSaveProfile  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSaveProfile(const UTC_PROFILE_INFO* pProfile = NULL);       
+                                </pre>
+                                <p>This function is used to save the current profile to a different file.</p>
+                                <p>@input: </p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully saved the profile.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_4">UTCRenameProfile  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCRenameProfile(const TCHAR* pszProfileName, const TCHAR* pszNewProfileName, const TCHAR* pszNewImageName);  
+                                </pre>
+                                <p>This function is used to rename a profile.</p>
+                                <p>@input: three constant strings <b>pszProfileName</b>, <b>pszNewProfileName</b>, <b>pszNewImageName</b></p>
+                                <p><b>pszProfileName</b> is the current name of the profile to be renamed, <b>pszNewProfileName</b> is the new name of the profile, and <b>pszNewImageName</b> is the new Image Name of profile.</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully renamed the profile.</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line8_5">UTCSaveProfileChanges  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI utc_result UTCSaveProfileChanges(); 
+                                </pre>
+                                <p>This function is used to save profile changes.</p>
+                                <p>@input: none</p>
+                                <p>@return: <b>utc_result</b> indicating if it has successfully saved all profile changes.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line9" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Processing System Management Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line9_1">UTCGetProbeProperty  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI CUTCProperty* UTCGetProbeProperty();              
+                                </pre>
+                                <p>This function is used to get property trees of processing system.</p>
+                                <p>@input: none</p>
+                                <p>@return: a CUTCProperty pointer, which points to the property trees of processing system.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end section -->
+
+                    <section id="line10" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text">Error Functions<a href="#top">#back to top</a></h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line10_1">UTCGetLastError  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI void UTCGetLastError(TCHAR* pszMessage, int nSize);           
+                                </pre>
+                                <p>This function is used to get the last error message.</p>
+                                <p>@input: a constant string <b>pszMessage</b>, and an integer value <b>nSize</b></p>
+                                <p>@return: none</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4 id="line10_2">UTCMapResultCode  <a href="#top">#back to top</a></h4>
+                                <pre class="brush: html">
+                                    UTCAPI const TCHAR* UTCMapResultCode(utc_result code);  
+                                </pre>
+                                <p>This function is used to map result code to corresponding string.</p>
+                                <p>@input: a utc_result <b>code</b>, an error code to map.</p>
+                                <p>@return: a constant string, the string of given error code.</p>
+                            </div>
+                        </div>
+                    </section>
                     <!-- end section -->
                 </div>
                 <!-- // end .col -->
